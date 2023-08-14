@@ -1,4 +1,5 @@
 import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Node;
@@ -510,8 +511,12 @@ public class Scheduler extends Application {
         class Runner {
             Duration duration = Duration.ofSeconds(0);
             void runTask() {
-                sessionCounterAction = executorService.scheduleAtFixedRate(() -> text.setText(myBundle.getString("16")
-                        + formatTime((duration = duration.plusSeconds(1)).toString())), 0, 1, TimeUnit.SECONDS);
+                sessionCounterAction = executorService.scheduleAtFixedRate(() -> {
+                    Platform.runLater(() -> {
+                        text.setText(myBundle.getString("16")
+                                + formatTime((duration = duration.plusSeconds(1)).toString()));
+                    });
+                }, 0, 1, TimeUnit.SECONDS);
             }
         }
         new Runner().runTask();
