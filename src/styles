@@ -1,0 +1,74 @@
+#langTitle {
+    -fx-text-fill: white;
+    -fx-font-size: 35;
+}
+
+#langButton {
+    -fx-background-color: #337ab7;
+    -fx-text-fill: white;
+    -fx-font-size: 24;
+    -fx-alignment: center;
+    -fx-pref-width: 200;
+    -fx-pref-height: 100;
+}
+
+#langButton:hover {
+    -fx-background-color: #2e6da4;
+}
+
+#langSelectionPane {
+    -fx-background-color: #235a82
+}
+
+#dataLabel {
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+}
+
+#mainPane {
+    -fx-background-color: #235a82
+}
+
+#regularButton {
+    -fx-background-color: #337ab7;
+    -fx-text-fill: white;
+    -fx-font-size: 18;
+    -fx-alignment: center;
+    -fx-min-width: 100;
+    -fx-pref-height: 50;
+}
+
+#regularButton:hover {
+    -fx-background-color: #2e6da4;
+}
+
+#sideButton {
+   -fx-background-color: #337ab7;
+}
+
+#sideButton:hover {
+    -fx-background-color: #2e6da4
+}
+
+.axis-label {
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+}
+
+#tLabelX {
+    -fx-tick-label-fill: white;
+    -fx-tick-label-font-size: 15
+ }
+
+ #tLabelY {
+    -fx-tick-label-fill: white;
+    -fx-tick-label-font-size: 15
+ }
+
+.chart-plot-background {
+    -fx-background-color: #235a82;
+}
+
+.white-bar {
+    -fx-bar-fill: white;
+}
